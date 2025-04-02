@@ -13,3 +13,18 @@ std::string reverseString(const std::string& input) {
 
     return reversed;
 }
+
+bool isPalindrome(const std::string& input) {
+    int left = 0;
+    int right = input.length() - 1;
+
+    while (left < right) {
+        if (input[left] != input[right]) {
+            return false;
+        }
+        ++left;
+        --right;
+    }
+
+    return true;
+}
