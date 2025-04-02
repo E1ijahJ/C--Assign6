@@ -1,0 +1,3 @@
+add_executable(StringFunctions_tests StringFunctions_tests.cpp)
+target_link_libraries(StringFunctions_tests PRIVATE StringFunctions GTest::gtest_main)
+gtest_discover_tests(StringFunctions_tests)
